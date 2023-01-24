@@ -1,13 +1,5 @@
 <?xml version="1.0"?>
-<!--
-/** Grid menu xml
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
--->
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="Webkul_Grid::manager" title="Grid Manager" module="Webkul_Grid" sortOrder="10" resource="Webkul_Grid::manager" />

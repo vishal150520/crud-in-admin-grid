@@ -38,7 +38,7 @@ class InstallSchema implements InstallSchemaInterface
          */
 
         $table = $installer->getConnection()->newTable(
-            $installer->getTable('wk_grid_records')
+            $installer->getTable('entity_id')
         )->addColumn(
             'entity_id',
             \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,

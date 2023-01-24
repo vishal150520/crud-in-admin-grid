@@ -10,6 +10,7 @@ namespace Webkul\Grid\Block\Adminhtml\Grid;
 
 class AddRow extends \Magento\Backend\Block\Widget\Form\Container
 {
+    // die;
     /**
      * Core registry.
      *
