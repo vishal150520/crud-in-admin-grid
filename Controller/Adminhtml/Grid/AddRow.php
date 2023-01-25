@@ -1,13 +1,6 @@
 <?php
-/**
- * Webkul Grid List Controller.
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
-namespace Webkul\Grid\Controller\Adminhtml\Grid;
+
+namespace Bluethink\Grid\Controller\Adminhtml\Grid;
 
 use Magento\Framework\Controller\ResultFactory;
 
@@ -19,19 +12,19 @@ class AddRow extends \Magento\Backend\App\Action
     private $coreRegistry;
 
     /**
-     * @var \Webkul\Grid\Model\GridFactory
+     * @var \Bluethink\Grid\Model\GridFactory
      */
     private $gridFactory;
 
     /**
      * @param \Magento\Backend\App\Action\Context $context
      * @param \Magento\Framework\Registry $coreRegistry,
-     * @param \Webkul\Grid\Model\GridFactory $gridFactory
+     * @param \Bluethink\Grid\Model\GridFactory $gridFactory
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Registry $coreRegistry,
-        \Webkul\Grid\Model\GridFactory $gridFactory
+        \Bluethink\Grid\Model\GridFactory $gridFactory
     ) {
         parent::__construct($context);
         $this->coreRegistry = $coreRegistry;
@@ -66,6 +59,6 @@ class AddRow extends \Magento\Backend\App\Action
 
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Webkul_Grid::add_row');
+        return $this->_authorization->isAllowed('Bluethink_Grid::add_row');
     }
 }

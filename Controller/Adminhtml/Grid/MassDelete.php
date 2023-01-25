@@ -1,18 +1,11 @@
 <?php
-/**
- * Webkul Grid Record Delete Controller.
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
-namespace Webkul\Grid\Controller\Adminhtml\Grid;
+
+namespace Bluethink\Grid\Controller\Adminhtml\Grid;
 
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Backend\App\Action\Context;
 use Magento\Ui\Component\MassAction\Filter;
-use Webkul\Grid\Model\ResourceModel\Grid\CollectionFactory;
+use Bluethink\Grid\Model\ResourceModel\Grid\CollectionFactory;
 
 class MassDelete extends \Magento\Backend\App\Action
 {
@@ -66,6 +59,6 @@ class MassDelete extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Webkul_Grid::row_data_delete');
+        return $this->_authorization->isAllowed('Bluethink_Grid::row_data_delete');
     }
 }

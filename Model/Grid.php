@@ -1,16 +1,9 @@
 <?php
 
-/**
- * Grid Grid Model.
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2017 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
-namespace Webkul\Grid\Model;
 
-use Webkul\Grid\Api\Data\GridInterface;
+namespace Bluethink\Grid\Model;
+
+use Bluethink\Grid\Api\Data\GridInterface;
 
 class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterface
 {
@@ -36,7 +29,7 @@ class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterfa
      */
     protected function _construct()
     {
-        $this->_init('Webkul\Grid\Model\ResourceModel\Grid');
+        $this->_init('Bluethink\Grid\Model\ResourceModel\Grid');
     }
     /**
      * Get EntityId.

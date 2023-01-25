@@ -1,29 +1,22 @@
 <?php
 
-/**
- * Grid Admin Cagegory Map Record Save Controller.
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
-namespace Webkul\Grid\Controller\Adminhtml\Grid;
+
+namespace Bluethink\Grid\Controller\Adminhtml\Grid;
 
 class Save extends \Magento\Backend\App\Action
 {
     /**
-     * @var \Webkul\Grid\Model\GridFactory
+     * @var \Bluethink\Grid\Model\GridFactory
      */
     var $gridFactory;
 
     /**
      * @param \Magento\Backend\App\Action\Context $context
-     * @param \Webkul\Grid\Model\GridFactory $gridFactory
+     * @param \Bluethink\Grid\Model\GridFactory $gridFactory
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
-        \Webkul\Grid\Model\GridFactory $gridFactory
+        \Bluethink\Grid\Model\GridFactory $gridFactory
     ) {
         parent::__construct($context);
         $this->gridFactory = $gridFactory;
@@ -59,6 +52,6 @@ class Save extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Webkul_Grid::save');
+        return $this->_authorization->isAllowed('Bluethink_Grid::save');
     }
 }

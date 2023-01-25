@@ -1,10 +1,6 @@
 <?php
-/**
- * Webkul_Grid Status Options Model.
- * @category    Webkul
- * @author      Webkul Software Private Limited
- */
-namespace Webkul\Grid\Model;
+
+namespace Bluethink\Grid\Model;
 
 use Magento\Framework\Data\OptionSourceInterface;
 

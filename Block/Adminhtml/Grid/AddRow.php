@@ -1,15 +1,10 @@
 <?php
-    /**
-     * Webkul_Grid Add Row Form Block.
-     *
-     * @category    Webkul
-     *
-     * @author      Webkul Software Private Limited
-     */
-namespace Webkul\Grid\Block\Adminhtml\Grid;
+    
+namespace Bluethink\Grid\Block\Adminhtml\Grid;
 
 class AddRow extends \Magento\Backend\Block\Widget\Form\Container
 {
+    // die;
     /**
      * Core registry.
      *
@@ -37,10 +32,10 @@ class AddRow extends \Magento\Backend\Block\Widget\Form\Container
     protected function _construct()
     {
         $this->_objectId = 'row_id';
-        $this->_blockGroup = 'Webkul_Grid';
+        $this->_blockGroup = 'Bluethink_Grid';
         $this->_controller = 'adminhtml_grid';
         parent::_construct();
-        if ($this->_isAllowedAction('Webkul_Grid::add_row')) {
+        if ($this->_isAllowedAction('Bluethink_Grid::add_row')) {
             $this->buttonList->update('save', 'label', __('Save'));
         } else {
             $this->buttonList->remove('save');

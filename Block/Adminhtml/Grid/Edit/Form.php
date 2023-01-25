@@ -1,12 +1,6 @@
 <?php
-/**
- * Webkul_Grid Add New Row Form Admin Block.
- * @category    Webkul
- * @package     Webkul_Grid
- * @author      Webkul Software Private Limited
- *
- */
-namespace Webkul\Grid\Block\Adminhtml\Grid\Edit;
+
+namespace Bluethink\Grid\Block\Adminhtml\Grid\Edit;
 
 /**
  * Adminhtml Add New Row Form.
@@ -23,14 +17,14 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      * @param \Magento\Framework\Registry $registry,
      * @param \Magento\Framework\Data\FormFactory $formFactory,
      * @param \Magento\Cms\Model\Wysiwyg\Config $wysiwygConfig,
-     * @param \Webkul\Grid\Model\Status $options,
+     * @param \Bluethink\Grid\Model\Status $options,
      */
     public function __construct(
         \Magento\Backend\Block\Template\Context $context,
         \Magento\Framework\Registry $registry,
         \Magento\Framework\Data\FormFactory $formFactory,
         \Magento\Cms\Model\Wysiwyg\Config $wysiwygConfig,
-        \Webkul\Grid\Model\Status $options,
+        \Bluethink\Grid\Model\Status $options,
         array $data = []
     ) {
         $this->_options = $options;
@@ -43,8 +37,10 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      *
      * @return $this
      */
+    // die;
     protected function _prepareForm()
     {
+        // die;
         $dateFormat = $this->_localeDate->getDateFormat(\IntlDateFormatter::SHORT);
         $model = $this->_coreRegistry->registry('row_data');
         $form = $this->_formFactory->create(

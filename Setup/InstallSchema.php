@@ -1,14 +1,7 @@
 <?php
-/**
- * Grid Schema Setup.
- * @category  Webkul
- * @package   Webkul_Grid
- * @author    Webkul
- * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
- * @license   https://store.webkul.com/license.html
- */
 
-namespace Webkul\Grid\Setup;
+
+namespace Bluethink\Grid\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -38,7 +31,7 @@ class InstallSchema implements InstallSchemaInterface
          */
 
         $table = $installer->getConnection()->newTable(
-            $installer->getTable('wk_grid_records')
+            $installer->getTable('entity_id')
         )->addColumn(
             'entity_id',
             \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
